@@ -31,7 +31,13 @@ Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 # T3 Study App
 
 ## TODO
-- [ ] Make it deploy
+- [x] Make it deploy
 - [ ] Scaffold Basic UI with mock data'
 - [ ] Actually set up a database
-- [ ] Add image upload
+- [ ] Home Page
+  - [ ] Add image upload
+  - [ ] Assignment Tracker
+  - [ ] Pomodoro Timer
+- [ ] Pet Page
+  - [ ] XP Sytem w/ levels & moods
+  - [ ] Add image upload
