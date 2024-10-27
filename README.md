@@ -41,3 +41,7 @@ Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 - [ ] Pet Page
   - [ ] XP Sytem w/ levels & moods
   - [ ] Add image upload
+
+## Credit
+- paw png: <a href="https://www.freepik.com/free-vector/paw-print-with-heart_199776759.htm#fromView=search&page=1&position=32&uuid=6c0e833d-b4b5-4a38-9f4e-a6c4c8e4b47a">Image by juicy_fish on Freepik</a>
+- header: technica footer

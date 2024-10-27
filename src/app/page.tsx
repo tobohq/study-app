@@ -1,20 +1,73 @@
 import Link from "next/link";
 import Navbar from "../components/Navbar";
+import Timer from "../components/Timer";
 
 export default function HomePage() {
   return (
-    <main className= "bg-gradient-to-b from-[#f2d8ec] to-[#faf0f8] text-white">
-      <Navbar />
+    <main className="bg-gradient-to-b from-[#f2d8ec] to-[#faf0f8] text-[#ebd9cb]">
       
-      <div className="bg-cover h-48 w-64"
-      style={{ backgroundImage: "url('https://utfs.io/f/ShHtJId4pBZ8S5vgDd4pBZ8169eqb2kYmvuhwTERGKL0yMVF')" }}></div>
+      <Navbar />
 
-      <div className = "flex min-h-screen flex-col items-center justify-center text-darkgrey">
-        <div className = "flex flex-wrap">
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Est nullam hac purus at fusce cras justo suscipit ultrices. Dapibus maecenas cursus nec felis taciti nulla pellentesque interdum. Nam finibus quis dis dis lorem vitae tempor pulvinar. Orci augue suspendisse netus netus aptent. Litora ultricies ipsum iaculis viverra magnis nam id urna.
-        Placerat luctus vel mus ultricies torquent parturient? Conubia leo posuere blandit justo elementum massa. Mollis ultrices erat sagittis sed tortor. Pulvinar adipiscing at eleifend litora luctus vulputate nostra. Lectus augue ad netus leo vel lacinia primis. Facilisis ac etiam aliquet fermentum magnis dictumst. Fermentum duis ipsum eget magna hac.
-        Congue pharetra enim mollis egestas cursus metus iaculis penatibus. Tempor velit lacus; molestie nunc mus tempus? Nascetur fusce gravida habitasse consectetur velit posuere. In arcu ridiculus, et erat ex efficitur donec netus. In primis eros, nulla sit diam semper. Non per eros semper; nibh nec euismod. Ad faucibus facilisi facilisis diam conubia.
-        ipsum dignissim a phasellus maximus gravida. Ornare sed habitant dui eleifend sociosqu fringilla gravida etiam. Integer velit laoreet maecenas himenaeos dolor himenaeos. Pulvinar lobortis ornare dictum porta vel facilisi platea? Sodales quam porttitor ullamcorper nullam euismod morbi nostra. Quis diam nec turpis non nibh vestibulum nisl leo. Fusce blandit vulputate elementum volutpat donec nascetur arcu maximus sollicitudin. Erat blandit quam tellus ligula aliquet risus etiam. Aquis massa elit fames condimentum mattis curae dolor. Hac nulla malesuada ullamcorper quis condimentum. 
+      {/* Header Image Section */}
+      <div
+        className="bg-cover bg-center h-96 w-full items-center place-content-center justify-items-center"
+        style={{
+          backgroundImage: "url('https://utfs.io/f/ShHtJId4pBZ8S5vgDd4pBZ8169eqb2kYmvuhwTERGKL0yMVF')",
+        }}
+      >
+        <h1 className = "font-bold" 
+            style={{
+              fontSize: '80px', fontFamily: 'cursive', textShadow: '-8px 0px 2px #6e5579, 2px -2px 0px #6e5579, -2px 2px 0px #6e5579, 2px 2px 0px #6e5579'
+            }}> Make Studying Fun </h1>
+      </div>
+
+      {/* Main Content Section */}
+
+      <div className="flex-column items-center justify-center text-center">
+        {/* About Page */}
+        <div className = "flex-column items-center justify-center text-center bg-[#a6c2b1] text-[#576280] p-10 w-full">
+          <h1 className ="text-5xl font-bold" style = {{fontFamily: "cursive"}}> Meet your study pawtner, Simba! </h1>
+          <div className = "flex place-content-center">
+            <div className = "text-wrap text-xl p-10 w-3/6 justify-center"> 
+            Simba is your small, cheerful Pomeranian study buddy, here to support your learning journey! 
+            Complete Pomodoro study sessions and assignments to earn XP and help Simba grow. 
+            Simba’s mood will reflect your daily progress, so keep working hard to keep him happy!
+            </div>
+        
+            <div >
+            <img className="h-70 w-80" src="https://utfs.io/f/ShHtJId4pBZ8vF9M4y0jtNhmgTnjxbrzUYMcKW60SuvqHBLC"></img>
+            <div className = "flex">
+            <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+              <div className="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" 
+              style= {{width: "45%"}}> 45%
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Pomodoro Timer */}
+        <div className="flex">
+          <div className="box-content h-52 w-4/6 p-4 items-center justify-center">
+              <h1 className="font-bold text-4xl" style={{
+                fontFamily: 'cursive', textShadow: '-1px 0px 0px #6e5579, 2px 2px 2px #6e5579, 2px 2px 0px #6e5579, 2px 2px 0px #6e5579'
+              }}>Pomodoro Timer</h1>
+              < Timer/>
+          </div>
+
+        {/* Assignments */}
+          <div className="box-content h-52 w-3/6 p-4 items-center justify-center">
+            <h1 className="font-bold text-4xl" style={{
+              fontFamily: 'cursive', textShadow: '-1px 0px 0px #6e5579, 2px 2px 2px #6e5579, 2px 2px 0px #6e5579, 2px 2px 0px #6e5579'
+              }}>Assignments</h1>
+          </div>
+        </div>
+
+        {/* XP Trackers */}
+        <div className = "box-content h-32 w-50 p-4 flex justify-center text-center">
+            <h1 className = "font-bold" 
+            style = {{ fontSize:'25px' }}> XP Earned:</h1>
         </div>
       </div>
     </main>
